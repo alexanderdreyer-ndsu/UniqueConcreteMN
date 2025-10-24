@@ -51,7 +51,7 @@ function App() {
       </div>
 
       <div className="w-full h-70 flex flex-col items-center bg-[#3c3c3c]">
-        <Footer text="2025 Unique Concrete MN | Created by © 2025 ARD Software" socialMedia={socialMedia}/>
+        <Footer text="2025 Unique Concrete MN | Created by © 2025 Alec Dreyer" socialMedia={socialMedia}/>
       </div>
     </Router>
   );
