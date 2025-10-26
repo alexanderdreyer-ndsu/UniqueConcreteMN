@@ -27,8 +27,8 @@ function Commercial() {
             <SlidingGalleryBackground images={slidingImages} />
 
             <div className="flex flex-col h-screen place-content-center items-center text-white">
-                <h1 className="text-6xl font-normal">Commercial Concrete</h1>
-                <h2 className="text-3xl font-normal">Learn More About Our Commercial Services</h2>
+                <h1 className="text-6xl font-normal [text-shadow:2px_2px_4px_rgba(0,0,0,0.4)]">Commercial Concrete</h1>
+                <h2 className="text-3xl font-normal [text-shadow:2px_2px_4px_rgba(0,0,0,0.4)]">Learn More About Our Commercial Services</h2>
             </div>
 
             <div className="flex flex-col justify-center bg-black/90 px-20 h-70 text-white">
