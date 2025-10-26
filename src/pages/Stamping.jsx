@@ -32,8 +32,8 @@ function Stamping() {
             <SlidingGalleryBackground images={slidingImages} />
 
             <div className="flex flex-col h-screen place-content-center items-center text-white">
-                <h1 className="text-6xl font-normal">Custom Concrete</h1>
-                <h2 className="text-3xl font-normal">See Our Attention To Detail</h2>
+                <h1 className="text-6xl font-normal [text-shadow:2px_2px_4px_rgba(0,0,0,0.4)]">Custom Concrete</h1>
+                <h2 className="text-3xl font-normal [text-shadow:2px_2px_4px_rgba(0,0,0,0.4)]">See Our Attention To Detail</h2>
             </div>
 
             <div className="flex flex-col justify-center bg-black/90 px-20 h-70 text-white">
