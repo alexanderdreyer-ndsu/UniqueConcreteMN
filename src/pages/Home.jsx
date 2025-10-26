@@ -53,8 +53,8 @@ function Home() {
             <SlidingGalleryBackground images={slidingImages} />
 
             <div className="flex flex-col h-screen place-content-center items-center text-white">
-                <h1 className="text-6xl font-normal">Unique Concrete MN</h1>
-                <h4 className="text-3xl">Building On Craftsmanship &amp; Integrity</h4>
+                <h1 className="text-6xl font-normal [text-shadow:2px_2px_4px_rgba(0,0,0,0.4)]">Unique Concrete MN</h1>
+                <h4 className="text-3xl [text-shadow:2px_2px_4px_rgba(0,0,0,0.4)]">Building On Craftsmanship &amp; Integrity</h4>
             </div>
             
             <div className="flex w-full justify-center items-center bg-white justify-evenly bg-white/85 py-10">
