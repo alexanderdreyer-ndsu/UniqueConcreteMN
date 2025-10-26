@@ -30,8 +30,8 @@ function Residential() {
             <SlidingGalleryBackground images={slidingImages} />
 
             <div className="flex flex-col h-screen place-content-center items-center text-white">
-                <h1 className="text-6xl font-normal">Residential Concrete</h1>
-                <h2 className="text-3xl font-normal">Experience Our Expert Craftsmanship</h2>
+                <h1 className="text-6xl font-normal [text-shadow:2px_2px_4px_rgba(0,0,0,0.4)]">Residential Concrete</h1>
+                <h2 className="text-3xl font-normal [text-shadow:2px_2px_4px_rgba(0,0,0,0.4)]">Experience Our Expert Craftsmanship</h2>
             </div>
 
             <div className="flex flex-col justify-center bg-black/90 px-20 h-70 text-white">
