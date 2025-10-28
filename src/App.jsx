@@ -8,6 +8,8 @@ import Stamping from './pages/Stamping.jsx';
 import Contact from './pages/Contact.jsx';
 import Logo from './assets/LogoSimple.JPG';
 import ScrollToTop from './components/ScrollToTop.jsx';
+import LocationDisplay from './components/LocationDisplay.jsx';
+import SubjectDescription from './components/SubjectDescription.jsx';
 import './App.css';
 
 function App() {
@@ -32,6 +34,8 @@ function App() {
     email: 'uniqueconcretemn@gmail.com',
   };
 
+  const location = [45.05557189149158, -94.06167970055117];
+
   return (
     <Router>
       <ScrollToTop />
@@ -48,6 +52,23 @@ function App() {
           <Route path="/Stamping" element={<Stamping />}/>
           <Route path="/Contact" element={<Contact />}/>
         </Routes>
+      </div>
+
+      <div className="flex w-full justify-between">
+        <div className="w-1/2 p-10 text-white bg-[#435D52]/95">
+            <SubjectDescription subject="Locations" paragraph={true} description="
+              Unique Concrete MN was started in Howard Lake, MN. We are based out 
+              of Howard Lake and have expanded to do work out of Grand Rapids, MN.
+              We service both surrounding areas.
+              "/>
+            <br />
+            <br />
+            <SubjectDescription subject="Main Address" paragraph={true} description="1020 2nd Ave , Howard Lake, MN, US, 55349" />
+        </div>  
+
+        <div className="w-1/2">
+          <LocationDisplay location={location} description="Unique Concrete MN"/>
+        </div>
       </div>
 
       <div className="w-full h-70 flex flex-col items-center bg-[#3c3c3c]">

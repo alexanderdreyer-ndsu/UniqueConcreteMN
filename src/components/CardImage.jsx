@@ -4,12 +4,12 @@ function CardLink(props) {
 
 
     return (
-        <div className="w-full bg-white/90 rounded-xl overflow-hidden hover:scale-105 duration-100 ease-linear">
+        <div className="w-full bg-white rounded-xl overflow-hidden hover:scale-103 duration-100 ease-linear hover:border-3">
             <img
-                className="w-60 h-auto"
+                className="w-full h-auto"
                 src={image}
             />
-            <h2 className="text-center text-black no-underline text-2xl">{title}</h2>
+            <h2 className="text-center text-black no-underline text-4xl py-4 font-semibold">{title}</h2>
         </div>
     )
 }
