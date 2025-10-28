@@ -21,7 +21,7 @@ function LocationDisplay(props) {
                 attribution='© <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors'
                 url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
             />
-            <Marker position={location}>
+            <Marker position={location} icon={businessIcon}>
                 <Popup>
                     <b>{description}</b>
                 </Popup>
