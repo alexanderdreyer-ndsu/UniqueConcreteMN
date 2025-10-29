@@ -34,6 +34,12 @@ function App() {
     email: 'uniqueconcretemn@gmail.com',
   };
 
+  const locationsList = [
+    "Howard Lake, MN",
+    "Grand Rapids, MN",
+    "Service All Surrounding Areas",
+  ]
+
   const location = [45.05557189149158, -94.06167970055117];
 
   return (
@@ -54,21 +60,15 @@ function App() {
         </Routes>
       </div>
 
-      <div className="flex w-full justify-between">
-        <div className="w-1/2 p-10 text-white bg-[#435D52]/95">
-            <SubjectDescription subject="Locations" paragraph={true} description="
-              Unique Concrete MN was started in Howard Lake, MN. We are based out 
-              of Howard Lake and have expanded to do work out of Grand Rapids, MN.
-              We service both surrounding areas.
-              "/>
-            <br />
-            <br />
+      <div className="flex flex-col w-full h-screen">
+        <div className="flex h-1/2 p-10 text-white bg-gray-400 justify-around items-center">
+            <div className="w-1/2 bg-[#435D52] p-10">
+              <SubjectDescription subject="Locations" paragraph={false} description={locationsList}/>
+            </div>
             <SubjectDescription subject="Main Address" paragraph={true} description="1020 2nd Ave , Howard Lake, MN, US, 55349" />
         </div>  
 
-        <div className="w-1/2">
-          <LocationDisplay location={location} description="Unique Concrete MN"/>
-        </div>
+        <LocationDisplay location={location} description="Unique Concrete MN"/>
       </div>
 
       <div className="w-full h-70 flex flex-col items-center bg-[#3c3c3c]">

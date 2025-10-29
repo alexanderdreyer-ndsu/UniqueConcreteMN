@@ -5,6 +5,7 @@ import patio2 from '../assets/patio2.jpg';
 import driveway7 from '../assets/driveway7.jpg';
 import sidewalk2 from '../assets/sidewalk2.jpg';
 import driveway2 from '../assets/driveway2.jpg';
+import VerticalImageGallery from '../components/VerticalImageGallery';
 
 function Residential() {
     const services = [
@@ -19,10 +20,16 @@ function Residential() {
     ];
 
     const slidingImages = [
-        { imgPath: patio2 },
-        { imgPath: sidewalk2 },
-        { imgPath: driveway6 },
-        { imgPath: driveway7 }
+        patio2,
+        sidewalk2,
+        driveway6,
+        driveway7,
+    ];
+
+    const verticalImages = [
+        driveway2,
+        sidewalk2,
+        patio2,
     ];
     
     return (
@@ -34,7 +41,7 @@ function Residential() {
                 <h2 className="text-3xl font-normal [text-shadow:2px_2px_4px_rgba(0,0,0,0.4)]">Experience Our Expert Craftsmanship</h2>
             </div>
 
-            <div className="flex flex-col justify-center bg-black/90 px-20 h-70 text-white">
+            <div className="flex flex-col justify-center bg-black/90 px-20 h-130 text-white">
                 <SubjectDescription subject="Residential Concrete" paragraph={true} description="
                     At Unique Concrete, we specialize in delivering high-quality residential concrete 
                     solutions that combine durability, beauty, and craftsmanship. We don't just pour 
@@ -46,11 +53,14 @@ function Residential() {
                 "/>
             </div>
 
-            <div className="flex w-full justify-evenly bg-[#435D52]/98 text-white items-center p-4">
-                <div className="w-2/5">
-                    <SubjectDescription subject="What We Offer" paragraph={false} description={services}/>
+            <div className="flex w-full h-[calc(100vh-6rem)] bg-[#435D52]/90 items-center">
+                <div className="bg-gray-300 p-20 h-4/5 flex items-center mx-auto">
+                    <SubjectDescription subject="What We Offer" paragraph={false} description={services} />
                 </div>
-                <img className="w-100 rounded border-4 border-white" src={driveway2}/>
+
+                <div className="h-full">
+                    <VerticalImageGallery images={verticalImages} />
+                </div>
             </div>
         </>
     )

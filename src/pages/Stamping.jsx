@@ -5,7 +5,7 @@ import stamping2 from '../assets/stamping2.jpg';
 import stamping3 from '../assets/stamping3.jpg';
 import stamping4 from '../assets/stamping4.jpg';
 import stamping5 from '../assets/stamping5.jpg';
-
+import VerticalImageGallery from '../components/VerticalImageGallery';
 
 function Stamping() {
     const services = [
@@ -20,11 +20,17 @@ function Stamping() {
     ];
 
     const slidingImages = [
-        { imgPath: stamping1 },
-        { imgPath: stamping2 },
-        { imgPath: stamping3 },
-        { imgPath: stamping4 },
-        { imgPath: stamping5 }
+        stamping1,
+        stamping2,
+        stamping3,
+        stamping4,
+        stamping5,
+    ];
+
+    const verticalImages = [
+        stamping3,
+        stamping4,
+        stamping5,
     ];
     
     return (
@@ -36,7 +42,7 @@ function Stamping() {
                 <h2 className="text-3xl font-normal [text-shadow:2px_2px_4px_rgba(0,0,0,0.4)]">See Our Attention To Detail</h2>
             </div>
 
-            <div className="flex flex-col justify-center bg-black/90 px-20 h-70 text-white">
+            <div className="flex flex-col justify-center bg-black/90 px-20 h-130 text-white">
                 <SubjectDescription subject="Custom Concrete" paragraph={true} description="
                     At Unique Concrete, our custom stamped and stained concrete showcases the true 
                     artistry and precision of our team. Each project is crafted with care, ensuring 
@@ -47,11 +53,14 @@ function Stamping() {
                 "/>
             </div>
 
-            <div className="flex w-full justify-evenly bg-[#435D52]/98 text-white items-center p-4">
-                <div className="w-2/5">
-                    <SubjectDescription subject="What We Offer" paragraph={false} description={services}/>
+            <div className="flex w-full h-[calc(100vh-6rem)] bg-[#435D52]/90 items-center">
+                <div className="bg-gray-300 p-20 h-4/5 flex items-center mx-auto">
+                    <SubjectDescription subject="What We Offer" paragraph={false} description={services} />
                 </div>
-                <img className="w-100 rounded border-4 border-white" src={stamping3}/>
+
+                <div className="h-full">
+                    <VerticalImageGallery images={verticalImages} />
+                </div>
             </div>
         </>
     )

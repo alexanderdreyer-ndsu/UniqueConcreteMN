@@ -13,8 +13,8 @@ function LocationDisplay(props) {
     return (
         <MapContainer
             center={location}
-            zoom={13}
-            style={{ height: "350px", width: "100%" }}
+            zoom={11}
+            style={{ height: "100%", width: "100%" }}
             scrollWheelZoom={false}
             >
             <TileLayer

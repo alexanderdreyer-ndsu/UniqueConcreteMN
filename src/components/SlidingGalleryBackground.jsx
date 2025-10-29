@@ -1,8 +1,6 @@
 import { useState, useEffect } from 'react';
 
-function SlidingGalleryBackground(props) {
-    const { images } = props;
-
+function SlidingGalleryBackground({ images }) {
     const [ imageIndex, setImageIndex ] = useState(0);
 
     useEffect(() => {
@@ -21,7 +19,7 @@ function SlidingGalleryBackground(props) {
                     className={`absolute w-full h-full bg-cover bg-center transition-opacity duration-2000 ease-in-out ${
                         index === imageIndex ? 'opacity-100' : 'opacity-0'
                     }`}
-                    style={{ backgroundImage: `url(${item.imgPath})` }}
+                    style={{ backgroundImage: `url(${item})` }}
                 />
             ))}
         </div>

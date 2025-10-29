@@ -2,6 +2,7 @@ import { Link } from 'react-router-dom';
 import SlidingGalleryBackground from '../components/SlidingGalleryBackground.jsx';
 import CardImage from '../components/CardImage.jsx';
 import SubjectDescription from '../components/SubjectDescription.jsx';
+import VerticalImageGallery from '../components/VerticalImageGallery.jsx';
 import driveway1 from '../assets/driveway1.jpg';
 import driveway3 from '../assets/driveway3.jpg';
 import patio1 from '../assets/patio1.jpg';
@@ -19,16 +20,16 @@ import driveway2 from '../assets/driveway2.jpg';
 import 'leaflet/dist/leaflet.css';
 
 const slidingImages = [
-    { imgPath: driveway3 },
-    { imgPath: driveway4 },
-    { imgPath: driveway1 },
-    { imgPath: patio1 },
-    { imgPath: patio2 },
-    { imgPath: parkingLot1 },
-    { imgPath: wall1 },
-    { imgPath: floor1 },
-    { imgPath: slab2 },
-    { imgPath: parkingLot2 },
+    driveway3,
+    driveway4,
+    driveway1,
+    patio1,
+    patio2,
+    parkingLot1,
+    wall1,
+    floor1,
+    slab2,
+    parkingLot2,
 ];
 
 const services = [
@@ -48,6 +49,12 @@ const services = [
     "And More!",
 ];
 
+const verticalImages = [
+    stamping2,
+    wall2,
+    driveway2,
+];
+
 function Home() {
     return (
         <>
@@ -58,7 +65,7 @@ function Home() {
                 <h4 className="text-3xl [text-shadow:2px_2px_4px_rgba(0,0,0,0.4)]">Building On Craftsmanship &amp; Integrity</h4>
             </div>
             
-            <div className="flex w-full h-screen justify-center items-center bg-white justify-evenly bg-white/85 py-13">
+            <div className="flex w-full h-screen justify-center items-center justify-evenly bg-white/85 py-13">
                 <Link to="/Residential" className="w-1/4">
                     <CardImage image={driveway3} title="Residential"/>
                 </Link>
@@ -72,8 +79,7 @@ function Home() {
                 </Link>
             </div>
 
-
-            <div className="flex h-screen w-full bg-black/85 items-center justify-evenly text-white py-20">
+            <div className="flex h-screen w-full bg-black/85 text-white items-center justify-evenly py-20">
                 <div className="w-1/2 bg-white/90 text-black font-semibold p-10 rounded">
                     <SubjectDescription subject="Who We Are" paragraph={true} description="
                         Unique Concrete and Stamping LLC delivers high-quality decorative 
@@ -89,20 +95,12 @@ function Home() {
                 <img src={slab4} className="w-2/5 rounded border-white border-2 border-white"/>
             </div>
 
-            <div className="flex w-full h-[calc(100vh-7rem)] bg-gray-300/90 items-center text-white">
-                <div className="h-full w-3/5 flex px-10 items-center gap-3">
-                    <div className="overflow-hidden h-full w-50 transition-all duration-500 hover:w-96">
-                        <img src={stamping2} alt="stamping" className="h-full w-full object-cover transition-transform duration-500 hover:scale-105" />
-                    </div>
-                    <div className="overflow-hidden h-full w-50 transition-all duration-500 hover:w-96">
-                        <img src={wall2} alt="driveway" className="h-full w-full object-cover transition-transform duration-500 hover:scale-105" />
-                    </div>
-                    <div className="overflow-hidden h-full w-50 transition-all duration-500 hover:w-96">
-                        <img src={driveway2} alt="patio" className="h-full w-full object-cover transition-transform duration-500 hover:scale-105" />
-                    </div>
+            <div className="flex w-full h-[calc(100vh-6rem)] bg-gray-300/90 items-center text-white">
+                <div className="w-3/5 h-full">
+                    <VerticalImageGallery images={verticalImages} />
                 </div>
 
-                <div className=" bg-[#435D52] p-20">
+                <div className="bg-[#435D52] p-20 h-4/5 flex items-center">
                     <SubjectDescription subject="What We Do" paragraph={false} description={services}/>
                 </div>
             </div>
