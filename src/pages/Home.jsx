@@ -95,12 +95,12 @@ function Home() {
                 <img src={slab4} className="w-2/5 rounded border-white border-2 border-white"/>
             </div>
 
-            <div className="flex w-full h-[calc(100vh-6rem)] bg-gray-300/90 items-center text-white">
-                <div className="w-3/5 h-full">
+            <div className="flex w-full h-screen bg-gray-300/90 items-center text-white">
+                <div className="w-3/5 h-4/5">
                     <VerticalImageGallery images={verticalImages} />
                 </div>
 
-                <div className="bg-[#435D52] p-20 h-4/5 flex items-center">
+                <div className="bg-[#435D52] p-15 flex items-center mx-auto">
                     <SubjectDescription subject="What We Do" paragraph={false} description={services}/>
                 </div>
             </div>

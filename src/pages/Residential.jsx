@@ -53,13 +53,13 @@ function Residential() {
                 "/>
             </div>
 
-            <div className="flex w-full h-[calc(100vh-6rem)] bg-[#435D52]/90 items-center">
-                <div className="bg-gray-300 p-20 h-4/5 flex items-center mx-auto">
-                    <SubjectDescription subject="What We Offer" paragraph={false} description={services} />
+            <div className="flex w-full h-screen bg-gray-300/90 items-center text-white">
+                <div className="w-3/5 h-4/5">
+                    <VerticalImageGallery images={verticalImages} />
                 </div>
 
-                <div className="h-full">
-                    <VerticalImageGallery images={verticalImages} />
+                <div className="bg-[#435D52] p-15 flex items-center mx-auto">
+                    <SubjectDescription subject="Residential Products" paragraph={false} description={services}/>
                 </div>
             </div>
         </>
