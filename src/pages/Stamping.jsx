@@ -42,7 +42,7 @@ function Stamping() {
                 <h2 className="text-3xl font-normal [text-shadow:2px_2px_4px_rgba(0,0,0,0.4)]">See Our Attention To Detail</h2>
             </div>
 
-            <div className="flex flex-col justify-center bg-black/90 px-20 h-130 text-white">
+            <div className="flex flex-col justify-center bg-black/90 px-20 md:h-130 text-white">
                 <SubjectDescription subject="Custom Concrete" paragraph={true} description="
                     At Unique Concrete, our custom stamped and stained concrete showcases the true 
                     artistry and precision of our team. Each project is crafted with care, ensuring 
@@ -53,12 +53,12 @@ function Stamping() {
                 "/>
             </div>
 
-            <div className="flex w-full h-screen bg-gray-300/90 items-center text-white">
-                <div className="w-3/5 h-4/5">
+            <div className="flex flex-col md:flex-row w-full h-auto md:h-screen bg-gray-300/90 items-center justify-center text-white py-10 px-6 gap-8">
+                <div className="w-full md:w-3/5 h-[50vh] md:h-4/5">
                     <VerticalImageGallery images={verticalImages} />
                 </div>
 
-                <div className="bg-[#435D52] p-15 flex items-center mx-auto">
+                <div className="w-full md:w-2/5 bg-[#435D52] p-8 md:p-14 flex items-center justify-center rounded-lg shadow-lg">
                     <SubjectDescription subject="Custom Products" paragraph={false} description={services}/>
                 </div>
             </div>

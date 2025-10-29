@@ -17,7 +17,7 @@ function Contact() {
 
     return (
         <>
-            <div className="flex w-full mt-27 py-5 justify-evenly items-center bg-[#435D52] text-white font-large">
+            <div className="flex flex-col gap-4 md:flex-row w-full md:mt-27 py-5 justify-evenly items-center bg-[#435D52] text-white font-large">
                 <SubjectDescription subject="By Phone" paragraph={true} description="(612)231-9612"/>
                 <SubjectDescription subject="By Email" paragraph={true} description="uniqueconcretemn@gmail.com"/>
                 <SocialMediaLink socialMedia={socialMedia}/>
