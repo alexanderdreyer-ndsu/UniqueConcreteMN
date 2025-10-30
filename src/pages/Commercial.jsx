@@ -43,27 +43,31 @@ function Commercial() {
                 <h2 className="text-3xl font-normal [text-shadow:2px_2px_4px_rgba(0,0,0,0.4)]">Learn More About Our Commercial Services</h2>
             </div>
 
-            <div className="flex flex-col justify-center bg-black/90 p-10 md:h-130 text-white">
-                <SubjectDescription subject="Commercial Concrete" paragraph={true} description="
-                    At Unique Concrete, we deliver professional-grade commercial concrete solutions 
-                    designed to meet the demands of any business or construction project. From 
-                    storefronts and walkways to parking lots and structural foundations, we combine 
-                    strength, precision, and visual appeal in every pour. We collaborate 
-                    directly with business owners, contractors, and developers to plan and design 
-                    layouts that maximize both functionality and aesthetics. With years of industry 
-                    experience, we understand the importance of timelines, durability, and long-lasting 
-                    performance — providing commercial concrete work that enhances your property's 
-                    value and stands the test of time.
-                "/>
+            <div className="bg-black/90">
+                <div className="flex flex-col justify-center mx-auto 2xl:w-2/3 p-10 md:h-130 text-white">
+                    <SubjectDescription subject="Commercial Concrete" paragraph={true} description="
+                        At Unique Concrete, we deliver professional-grade commercial concrete solutions 
+                        designed to meet the demands of any business or construction project. From 
+                        storefronts and walkways to parking lots and structural foundations, we combine 
+                        strength, precision, and visual appeal in every pour. We collaborate 
+                        directly with business owners, contractors, and developers to plan and design 
+                        layouts that maximize both functionality and aesthetics. With years of industry 
+                        experience, we understand the importance of timelines, durability, and long-lasting 
+                        performance — providing commercial concrete work that enhances your property's 
+                        value and stands the test of time.
+                    "/>
+                </div>
             </div>
 
-            <div className="flex flex-col md:flex-row w-full h-auto md:h-screen bg-gray-300/90 items-center justify-center text-white py-10 px-6 gap-8">
-                <div className="w-full md:w-3/5 h-[50vh] md:h-4/5">
-                    <VerticalImageGallery images={verticalImages} />
-                </div>
+            <div className="bg-gray-300/90">
+                <div className="max-w-7xl mx-auto flex flex-col-reverse md:flex-row w-full h-auto md:h-screen lg:h-150 items-center justify-center text-white py-10 px-6 gap-8">
+                    <div className="w-full md:w-3/5 h-screen md:h-4/5">
+                        <VerticalImageGallery images={verticalImages} />
+                    </div>
 
-                <div className="w-full md:w-2/5 bg-[#435D52] p-8 md:p-14 flex items-center justify-center rounded-lg shadow-lg">
-                    <SubjectDescription subject="Commercial Products" paragraph={false} description={services}/>
+                    <div className="w-full md:w-2/5 lg:w-auto bg-[#435D52] p-8 md:p-14 flex items-center justify-center rounded-lg shadow-lg">
+                        <SubjectDescription subject="Commercial Products" paragraph={false} description={services}/>
+                    </div>
                 </div>
             </div>
         </>

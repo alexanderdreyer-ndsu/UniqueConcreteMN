@@ -31,7 +31,7 @@ function App() {
   ];
   
   const contactInfo = {
-    phone: 'Call For An Estimate: (612)231-9612',
+    phone: 'Call For An Estimate: (612) 231-9612',
     email: 'uniqueconcretemn@gmail.com',
   };
 
@@ -62,21 +62,21 @@ function App() {
       </div>
 
       <div className="bg-white text-4xl p-5">
-        <CallToAction call="Call For An Estimate" action="(612)231-9612"/>
+        <CallToAction call="Call For An Estimate" action="(612) 231-9612"/>
       </div>
 
-      <div className="flex flex-col w-full md:h-screen">
-        <div className="flex flex-col md:flex-row h-auto md:h-1/2 p-6 md:p-10 text-white bg-gray-400 justify-center md:justify-around items-center gap-6 md:gap-0">
-          <div className="w-full md:w-1/2 bg-[#435D52] p-6 md:p-10 rounded-lg shadow-lg">
+      <div className="flex flex-col w-full h-auto md:h-[90vh] lg:h-[80vh] xl:h-[80vh] 2xl:h-[50vh] bg-gray-400">
+        <div className="flex flex-col md:flex-row justify-center items-center md:h-1/2 w-full max-w-7xl mx-auto p-6 md:p-10 text-white gap-6 lg:gap-20">
+          <div className="w-full md:w-1/2 lg:w-1/3 bg-[#435D52] p-6 md:p-10 rounded-lg shadow-lg">
             <SubjectDescription subject="Locations" paragraph={false} description={locationsList}/>
           </div>
 
-          <div className="w-full md:w-auto text-center md:text-left bg-[#435D52] md:bg-transparent p-4 md:p-0 rounded-lg shadow-lg md:shadow-none">
-            <SubjectDescription subject="Main Address" paragraph={true} description="1020 2nd Ave, Howard Lake, MN, US, 55349"/>
+          <div className="w-full md:w-1/2 lg:w-1/3 text-center md:text-left bg-[#435D52] md:bg-transparent p-6 md:p-0 rounded-lg shadow-lg md:shadow-none">
+            <SubjectDescription subject="Main Address" paragraph={true} description="1020 2nd Ave, Howard Lake, MN 55349"/>
           </div>
         </div>
 
-        <div className="w-full h-50 md:h-full">
+        <div className="flex w-full h-auto md:h-1/2">
           <LocationDisplay location={location} description="Unique Concrete MN" />
         </div>
       </div>

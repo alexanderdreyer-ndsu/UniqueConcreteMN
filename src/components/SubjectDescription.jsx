@@ -4,7 +4,7 @@ function SubjectDescription(props) {
 
     return (
         <div className="flex flex-col items-center justify-content-center">
-            <h3 className="text-3xl">{subject}</h3>
+            <h3 className="text-3xl text-break text-center">{subject}</h3>
             <br />
             {paragraph === true ? <p>{description}</p> :
                 <ul>

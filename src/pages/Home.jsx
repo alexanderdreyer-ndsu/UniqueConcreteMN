@@ -60,12 +60,12 @@ function Home() {
         <>
             <SlidingGalleryBackground images={slidingImages} />
 
-            <div className="flex flex-col h-screen place-content-center items-center text-white">
+            <div className="flex flex-col h-screen sm:h-screen place-content-center items-center text-white">
                 <h1 className="text-6xl font-normal [text-shadow:2px_2px_4px_rgba(0,0,0,0.4)]">Unique Concrete MN</h1>
                 <h4 className="text-3xl [text-shadow:2px_2px_4px_rgba(0,0,0,0.4)]">Building On Craftsmanship &amp; Integrity</h4>
             </div>
             
-            <div className="flex flex-col md:flex-row w-full h-auto md:h-[calc(100vh-10rem)] justify-center items-center md:justify-evenly bg-white/85 py-10 gap-6 md:gap-0">
+            <div className="flex flex-col md:flex-row w-full h-auto md:h-[calc(100vh-10rem)] xl:h-[40vh] justify-center items-center md:justify-evenly bg-white/85 py-10 gap-6 md:gap-0">
                 <Link to="/Residential" className="w-5/6 sm:w-2/3 md:w-1/4">
                     <CardImage image={driveway3} title="Residential" />
                 </Link>
@@ -79,8 +79,8 @@ function Home() {
                 </Link>
             </div>
 
-            <div className="flex flex-col md:flex-row h-auto md:h-screen w-full bg-black/85 text-white items-center justify-evenly py-10 px-6 md:py-20 gap-10">
-                <div className="w-full md:w-1/2 bg-white/90 text-black font-semibold p-6 md:p-10 rounded-lg shadow-lg">
+            <div className="flex flex-col md:flex-row h-auto md:h-screen xl:h-[60vh] w-full bg-black/85 text-white items-center justify-evenly py-10 px-6 md:py-20 gap-10">
+                <div className="w-full md:w-1/2 lg:w-1/3 bg-white/90 text-black font-semibold p-6 md:p-10 rounded-lg shadow-lg">
                     <SubjectDescription subject="Who We Are" paragraph={true} description="
                         Unique Concrete and Stamping LLC delivers high-quality decorative 
                         and functional concrete solutions throughout Howard Lake, Grand Rapids, 
@@ -92,21 +92,18 @@ function Home() {
                     "/>
                 </div>
 
-                <img
-                    src={slab4}
-                    alt="Decorative concrete slab"
-                    className="w-full md:w-2/5 rounded-lg border-2 border-white shadow-md object-cover"
-                />
+                <img src={slab4} className="w-full md:w-2/5 xl:w-1/4 rounded-lg border-2 border-white shadow-md object-cover"/>
             </div>
 
+            <div className="bg-gray-300/90">
+                <div className="max-w-7xl mx-auto flex flex-col-reverse md:flex-row w-full h-auto md:h-screen lg:h-150 items-center justify-center text-white py-10 px-6 gap-8">
+                    <div className="w-full md:w-3/5 h-screen md:h-4/5">
+                        <VerticalImageGallery images={verticalImages} />
+                    </div>
 
-            <div className="flex flex-col md:flex-row w-full h-auto md:h-screen bg-gray-300/90 items-center justify-center text-white py-10 px-6 gap-8">
-                <div className="w-full md:w-3/5 h-[50vh] md:h-4/5">
-                    <VerticalImageGallery images={verticalImages} />
-                </div>
-
-                <div className="w-full md:w-2/5 bg-[#435D52] p-8 md:p-14 flex items-center justify-center rounded-lg shadow-lg">
-                    <SubjectDescription subject="What We Do" paragraph={false} description={services}/>
+                    <div className="w-full md:w-2/5 lg:w-auto bg-[#435D52] p-8 md:p-14 flex items-center justify-center rounded-lg shadow-lg">
+                        <SubjectDescription subject="What We Do" paragraph={false} description={services}/>
+                    </div>
                 </div>
             </div>
         </>
