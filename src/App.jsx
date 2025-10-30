@@ -26,7 +26,7 @@ function App() {
       { label: 'Commercial', href: '/Commercial'},
       { label: 'Stamping', href: '/Stamping'},
     ]},
-    { label: 'Gallery', href: 'https://www.facebook.com/Uniqueconcretemn/photos'},
+    { label: 'Facebook Gallery', href: 'https://www.facebook.com/Uniqueconcretemn/photos'},
     { label: 'Contact', href: '/Contact'},
   ];
   
