@@ -41,7 +41,7 @@ function Residential() {
                 <h2 className="text-3xl font-normal [text-shadow:2px_2px_4px_rgba(0,0,0,0.4)]">Experience Our Expert Craftsmanship</h2>
             </div>
 
-            <div className="flex flex-col justify-center bg-black/90 px-20 md:h-130 text-white">
+            <div className="flex flex-col justify-center bg-black/90 p-10 md:h-130 text-white">
                 <SubjectDescription subject="Residential Concrete" paragraph={true} description="
                     At Unique Concrete, we specialize in delivering high-quality residential concrete 
                     solutions that combine durability, beauty, and craftsmanship. We don't just pour 
